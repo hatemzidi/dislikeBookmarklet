@@ -229,7 +229,8 @@ span {
     font-size: 13px;
     position: absolute;
     width: 22px;
-    padding: 0 163px;
+    padding: 0 270px;
     color: #999;
     font-style: normal;
+    margin-top: -20px;
 }

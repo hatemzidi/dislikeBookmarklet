@@ -1,8 +1,8 @@
-iDislikeThis Bookmarklet
+iDislikeThis Bookmarklet ![alt text](https://raw.github.com/hatemzidi/dislikeBookmarklet/master/images/logo.png)
 ========================
 
 iDislikeThis Bookmarklet, as suggests the name, is a small bookmarklet link that can be used to add a dislike emoji
-( ![alt text](https://raw.github.com/hatemzidi/dislikeBookmarklet/master/images/dislike-symbol.png) ) to any text field that has focus.
+(![alt text](https://raw.github.com/hatemzidi/dislikeBookmarklet/master/images/dislike-symbol.png)) to any text field that has focus.
 
 just install it, and disapprove that status, image or comment ! ;)
 
@@ -11,8 +11,6 @@ just install it, and disapprove that status, image or comment ! ;)
   +  simple to use
   +  no need for any backend
   +  no storage, your privacy is respected.
-
-
 
 ► This bookmarklet can add the icon/character
   +  on any website
@@ -26,11 +24,11 @@ just install it, and disapprove that status, image or comment ! ;)
 changelog
 ---------
 v 1.3
-+ backend, hit counter is based on sqlite3 now
++ update backend: hit counter is based on sqlite3 now
 
 v 1.2
 + cleaning & organizing code
-+ hit counter
++ hit counter : text file based
 
 v 1.1
 + visual enhancements

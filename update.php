@@ -7,8 +7,23 @@
  *
  */
 header('Access-Control: allow *');
-$hit_count = @file_get_contents('counter.txt'); // read the hit count from file
-$hit_count++; // increment the hit count by 1
-@file_put_contents('counter.txt', $hit_count); // store the new hit count
-echo $hit_count; //  display the hit count
+
+// config
+$dbfolder = $_SERVER["DOCUMENT_ROOT"] . "/data/";
+$dbname = "counter.sq3";
+
+// check if database file exists first
+if (!file_exists($dbfolder . $dbname)) {
+  $logdb = new PDO("sqlite:" . $dbfolder . $dbname);
+  $logdb->exec("CREATE TABLE hits(id INTEGER PRIMARY KEY, counter INTEGER)");
+  $logdb->exec("INSERT INTO hits(id, counter) VALUES (1, 0)");
+} else {
+  $logdb = new PDO("sqlite:" . $dbfolder . $dbname);
+}
+
+// and boom ...
+$logdb->exec("UPDATE hits SET counter=counter+1 WHERE id=1");
+
+// close connection
+$logdb = null;
 ?>

@@ -7,5 +7,26 @@
  *
  */
 header('Access-Control: allow *');
-echo @file_get_contents('counter.txt'); // read the hit count from file
+
+// config
+$dbfolder = $_SERVER["DOCUMENT_ROOT"] . "/data/";
+$dbname = "counter.sq3";
+
+//connect
+$logdb = new PDO("sqlite:" . $dbfolder . $dbname);
+
+// well ...
+$statement = $logdb->query("SELECT counter FROM hits WHERE id=1");
+$record = $statement->fetchAll();
+
+if (sizeof($record) != 0) {
+  $counter = $record[0]['counter'];
+} else {
+  $counter = 1;
+}
+
+echo $counter;
+
+// close connection
+$logdb = null;
 ?>

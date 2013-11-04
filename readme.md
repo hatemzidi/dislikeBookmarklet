@@ -2,7 +2,7 @@ iDislikeThis Bookmarklet
 ========================
 
 iDislikeThis Bookmarklet, as suggests the name, is a small bookmarklet link that can be used to add a dislike emoji
-( ![alt text](http://idislike.hatemzidi.com/images/dislike-symbol.png) ) to any text field that has focus.
+( ![alt text](https://raw.github.com/hatemzidi/dislikeBookmarklet/master/images/dislike-symbol.png) ) to any text field that has focus.
 
 just install it, and disapprove that status, image or comment ! ;)
 

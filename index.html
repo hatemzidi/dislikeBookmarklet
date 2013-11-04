@@ -16,19 +16,7 @@
   <script
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="jquery.colorbox-min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#dislike_zone").mouseover(function () {
-        $("#header").slideDown();
-        $("#arrow").fadeIn();
-      }).mouseout(function () {
-            $("#header").slideUp();
-            $("#arrow").fadeOut();
-          });
-
-      $(".youtube").colorbox({iframe: true, innerWidth: 640, innerHeight: 390});
-    });
-  </script>
+  <script src="script.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="colorbox.css"/>
   <meta property="og:image"
@@ -61,6 +49,7 @@
           Dislike This! </a>
         <span id="version">v 1.2</span>
       </div>
+      <span id="counter">... dislikes, already!</span>
     </div>
     <div id="row" class="howto">
 

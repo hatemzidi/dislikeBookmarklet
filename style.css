@@ -234,3 +234,12 @@ span {
     font-style: normal;
     margin-top: -20px;
 }
+
+#counter {
+    font-size: 18px;
+    font-style: normal;
+    color: #999;
+    margin-left: 130px;
+    position: relative;
+
+}

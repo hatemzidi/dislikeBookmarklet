@@ -47,7 +47,7 @@
         <a id="dislikeBttn"
            href="javascript:(function(){if(document.activeElement.nodeName==='INPUT'||document.activeElement.nodeName==='TEXTAREA'){insertAtCursor(document.activeElement,' 👎 ');updateCounter();}function insertAtCursor(myField,myValue){if(document.selection){myField.focus();sel=document.selection.createRange();sel.text=myValue;}else if(myField.selectionStart||myField.selectionStart=='0'){var startPos=myField.selectionStart;var endPos=myField.selectionEnd;myField.value=myField.value.substring(0,startPos)+myValue+myField.value.substring(endPos,myField.value.length);myField.selectionStart=startPos+myValue.length;myField.selectionEnd=startPos+myValue.length;}else{myField.value+=myValue;}}function updateCounter(){img=document.createElement('img');img.src='http://idislike.hatemzidi.com/update.php';img.addEventListener('load',function (){console.log('woot');})}})()">I
           Dislike This! </a>
-        <span id="version">v 1.2</span>
+        <span id="version">v 1.3</span>
       </div>
       <span id="counter">... dislikes, already!</span>
     </div>

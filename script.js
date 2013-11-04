@@ -22,7 +22,7 @@ $(document).ready(function () {
   }
 
   //
-  $("#dislike_zone").mouseover(function () {
+  $("#dislikeBttn").mouseover(function () {
     $("#header").slideDown();
     $("#arrow").fadeIn();
   }).mouseout(function () {

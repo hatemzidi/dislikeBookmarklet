@@ -13,6 +13,8 @@ body {
     margin: 0;
     font-size: 1.5em/2em;
     font-family: 'Oxygen', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #container {
@@ -40,7 +42,7 @@ body {
 
 #body-wrapper {
     padding: 75px;
-    padding-bottom: 60px;
+    padding-bottom: 150px;
     margin: 0 auto;
 }
 
@@ -147,7 +149,7 @@ span {
 #footer-wrapper {
     overflow: hidden;
     background: #B9B9B9;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-top: 8px;
@@ -189,7 +191,7 @@ span {
 
 #copyright {
     overflow: hidden;
-    padding: 3px 0px 3px 0px;
+    padding: 15px 0px 3px 0px;
     text-align: center;
     color: #929090;
     font-size: 10px;

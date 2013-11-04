@@ -224,3 +224,12 @@ span {
     background-position: 0 -70px;
     color: #28628B;
 }
+
+#version {
+    font-size: 13px;
+    position: absolute;
+    width: 22px;
+    padding: 0 163px;
+    color: #999;
+    font-style: normal;
+}

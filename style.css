@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Oxygen');
+
 html,
 body {
     margin: 0;
@@ -9,18 +11,31 @@ body {
     background-color: #D5D5D5;
     color: #999;
     margin: 0;
-    font: 1.5em/2em "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+    font-size: 1.5em/2em;
+    font-family:  'Oxygen', sans-serif;
 }
 
 #container {
     margin: 0;
-    font-size: 150%;
+    font-size: 2em;
     min-height: 100%;
     position: relative;
 }
 
 #header-wrapper {
-    padding: 10px;
+    overflow: hidden;
+    background: #B9B9B9;
+    position: absolute;
+    width: 100%;
+}
+
+#header {
+	background-color: #B9B9B9;
+	display: none;
+	text-align: center;
+	padding-right: 120px;
+    padding-bottom: 15px;
+	color : #5F5F5F;
 }
 
 #body-wrapper {
@@ -28,6 +43,19 @@ body {
     padding-bottom: 60px;
     width : 1100px;
     margin : 0 auto;
+}
+
+#arrow {
+  background: url("arrowovertop.png");
+  display: block;
+  height: 170px;
+  position: absolute;
+  width: 150px;
+  z-index: 99;
+  left: 50%;
+  margin-left: 60px;
+  display: none;
+
 }
 
 a:link, a:visited {
@@ -70,22 +98,19 @@ span {
 
 #grapit {
     float: left;
-    width: 675px;
     padding-top: 70px;
 }
 
-#big_dislike {
-    float: right;
-    padding-right: 20px;
+#dislike_zone {
+    float: left;
 }
 
-#big_dislike a {
+#dislike_zone a {
     margin: 0px auto;
-    padding: 30px 0px 0px 110px;
-    border: none;
+    padding: 30px 4px 0px 110px;
+    border: 1px solid #A0A0A0;
     background: url("dislike.png") no-repeat 5px 4px;
     display: block;
-    width: 175px;
     height: 71px;
     background-color: #efefef;
     -webkit-border-radius: 5px;
@@ -93,7 +118,7 @@ span {
     border-radius: 5px;
 }
 
-#big_dislike a:hover {
+#dislike_zone a:hover {
     background-color: #E6E6E6;
 }
 

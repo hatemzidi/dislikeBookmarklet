@@ -9,12 +9,17 @@
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
       <meta name="author" content="hatem zidi"/>
       <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
-      <script type="text/javascript" src="http://use.typekit.com/lzy4gna.js"></script>
-      <script type="text/javascript">
-         try{
-           Typekit.load();
-         }catch(e){
-         }
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           $("#dislike_zone").mouseover(function(){
+             $("#header").slideDown();
+             $("#arrow").fadeIn();
+           }).mouseout(function(){
+             $("#header").slideUp();
+             $("#arrow").fadeOut();
+           });
+         });
       </script>
       <link href="style.css" rel="stylesheet" type="text/css">
       <meta property="og:image" content="http://idislike.hatemzidi.com/dislike.png" />
@@ -23,7 +28,9 @@
    </head>
    <body>
       <div id="container">
+         <div id="arrow"></div>
          <div id="header-wrapper">
+            <div id="header" class="container">Drag me to here !</div>
          </div>
          <div id="body-wrapper">
             <p>
@@ -36,8 +43,8 @@
                <div id="grapit">
                   <img src="grab_and_drag.png" />
                </div>
-               <div id="big_dislike">
-                  <a href="javascript:(function(){if(document.activeElement.nodeName==='INPUT'||document.activeElement.nodeName==='TEXTAREA'){document.activeElement.value='👎'}})();">I Dislike This!</a>
+               <div id="dislike_zone">
+                  <a id="dislikeBttn" href="javascript:(function(){if(document.activeElement.nodeName==='INPUT'||document.activeElement.nodeName==='TEXTAREA'){document.activeElement.value='👎'}})();">I Dislike This!</a>
                </div>
             </div>
          </div>
@@ -68,15 +75,15 @@
             </div>
          </div>
       </div>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-8405943-8', 'hatemzidi.com');
-		  ga('send', 'pageview');
-
-		</script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-8405943-8', 'hatemzidi.com');
+         ga('send', 'pageview');
+         
+      </script>
    </body>
 </html>

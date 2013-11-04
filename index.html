@@ -5,11 +5,12 @@
          I Dislike This! 
       </title>
       <meta name="description" content="disklike bookmarklet"/>
-      <meta name="keywords" content="blueminds, hatem zidi, freelance, facebook, dislike, bookmarklet"/>
+      <meta name="keywords" content="blueminds, hatem zidi, freelance, @tom_z, facebook, dislike, bookmarklet"/>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-      <meta name="author" content="hatem zidi"/>
+      <meta name="author" content="hatem zidi, hatem.zidi@gmail.com"/>
       <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="jquery.colorbox-min.js"></script>
       <script>
          $(document).ready(function(){
            $("#dislike_zone").mouseover(function(){
@@ -19,9 +20,12 @@
              $("#header").slideUp();
              $("#arrow").fadeOut();
            });
+
+           $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
          });
       </script>
       <link href="style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="colorbox.css" />
       <meta property="og:image" content="http://idislike.hatemzidi.com/dislike.png" />
       <meta property="og:title" content="I Dislike This!" />
       <meta property="og:description" content="Just share that you disapprove that content!" />
@@ -33,20 +37,26 @@
             <div id="header" class="container">Drag me to here !</div>
          </div>
          <div id="body-wrapper">
-            <p>
+            <div><p>
                Grrr! <br/>
                You just hate that status, image or comment ? <br/>
                You want to show that you disapprove it ?! <br/>
                That you dislike it ? ... Here is the solution..<br/>
-            </p>
-            <div id="row">
+            </p></div>
+            <div id="row" class="middle">
                <div id="grapit">
-                  <img src="grab_and_drag.png" />
+                  <img src="images/grab_and_drag.png" />
                </div>
                <div id="dislike_zone">
                   <a id="dislikeBttn" href="javascript:(function(){if(document.activeElement.nodeName==='INPUT'||document.activeElement.nodeName==='TEXTAREA'){document.activeElement.value='👎'}})();">I Dislike This!</a>
                </div>
             </div>
+           <div id="row" class="howto">
+
+             <div id="video">
+               <p id="video-link"><a class='youtube' href="http://www.youtube.com/embed/FdY_QyyEEAA?rel=0&amp;wmode=transparent">Watch the How To</a></p>
+              </div>
+           </div>
          </div>
          <div id="footer-wrapper">
             <div id="footer" class="container">

@@ -1,0 +1,18 @@
+.show {
+    font-size: 3em !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    height: 500px;
+    vertical-align: middle;
+    display: table-cell;
+    width: inherit;
+}
+
+#header-wrapper.backend {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+
+#header-wrapper.backend img {
+    margin-top: 50px;
+}

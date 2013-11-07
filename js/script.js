@@ -18,6 +18,8 @@ $(document).ready(function () {
         }, 2500);
       }).responseText;
 
+    counter = ( counter == undefined) ? 'Many' : counter;
+
     $("#counter").html(counter + " dislikes, already!");
   }
 

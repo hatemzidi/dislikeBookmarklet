@@ -7,6 +7,7 @@
  *
  */
 header('Access-Control: allow *');
+header('Access-Control-Allow-Origin: *');
 
 // config
 $dbfolder = $_SERVER["DOCUMENT_ROOT"] . "/data/";

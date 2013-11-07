@@ -87,8 +87,11 @@ span {
 }
 
 .logo {
-    color: #758DD6;
-    font-style: normal;
+    background-image:url(../images/dislike-logo.png);
+    display:block;
+    height:131px;
+    width:400px;
+    margin : auto;
 }
 
 #row {
@@ -244,4 +247,37 @@ span {
     margin-left: 130px;
     position: relative;
 
+}
+
+#supported {
+    font-size: 10px;
+    font-style: normal;
+    color: #999;
+    margin-left: 154px;
+    position: relative;
+}
+
+.supported-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    line-height: 16px;
+    /*vertical-align: middle;*/
+}
+
+.chrome {
+     background: url(../images/chrome.png) no-repeat 0 0;
+}
+
+.firefox {
+    background: url(../images/firefox.png) no-repeat 0 0;
+}
+
+.safari {
+    background: url(../images/safari.png) no-repeat 0 0;
+}
+
+.ie {
+    background: url(../images/IE.png) no-repeat 0 0;
 }

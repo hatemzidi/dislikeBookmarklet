@@ -8,6 +8,7 @@
  */
 header('Access-Control: allow *');
 header('Access-Control-Allow-Origin: *');
+header("Content-Type: image/gif");
 
 // config
 $dbfolder = $_SERVER["DOCUMENT_ROOT"] . "/data/";
@@ -27,4 +28,6 @@ $logdb->exec("UPDATE hits SET counter=counter+1 WHERE id=1");
 
 // close connection
 $logdb = null;
+
+echo file_get_contents(dirname(__FILE__).'/images/blank.gif');
 ?>

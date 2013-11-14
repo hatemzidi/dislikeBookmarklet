@@ -244,17 +244,18 @@ span {
     font-size: 18px;
     font-style: normal;
     color: #999;
-    margin-left: 130px;
+    margin-top: 10px;
     position: relative;
-
+    float: right;
 }
 
 #supported {
     font-size: 10px;
     font-style: normal;
     color: #999;
-    margin-left: 154px;
+    margin-top: 10px;
     position: relative;
+    float: right;
 }
 
 .supported-icon {

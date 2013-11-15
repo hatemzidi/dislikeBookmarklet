@@ -41,14 +41,12 @@ body {
 }
 
 #body-wrapper {
-    padding: 75px;
-    padding-bottom: 150px;
+    padding: 75px 75px 150px;
     margin: 0 auto;
 }
 
 #arrow {
     background: url("../images/arrowovertop.png");
-    display: block;
     height: 170px;
     position: absolute;
     width: 150px;
@@ -125,10 +123,9 @@ span {
     margin: 0px auto;
     padding: 30px 4px 0px 110px;
     border: 1px solid #A0A0A0;
-    background: url("../images/dislike.png") no-repeat 5px 4px;
     display: block;
     height: 71px;
-    background-color: #EFEFEF;
+    background: #EFEFEF url("../images/dislike.png") no-repeat 5px 4px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

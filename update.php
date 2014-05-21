@@ -17,12 +17,13 @@ $dbname = "counter.sq3";
 // sniffer
 $browser = $_SERVER['HTTP_USER_AGENT']; // get the browser name
 $ip = $_SERVER['REMOTE_ADDR']; // get the IP address
-$referrer = $_SERVER['HTTP_REFERER']; //  page from which visitor came
-
+$referrer = isset($_GET['r']) ? $_GET['r'] : $_SERVER['HTTP_REFERER']; //  page from which visitor came
 
 $logdb = new PDO("sqlite:" . $dbfolder . $dbname);
 
 // check if database file exists first
+// first shot, create the tables
+// init
 if (!file_exists($dbfolder . $dbname)) {
   $logdb->exec("CREATE TABLE hits(id INTEGER PRIMARY KEY, counter INTEGER)");
   $logdb->exec(
@@ -45,5 +46,6 @@ $logdb->exec("INSERT INTO tracker(browser, ip, referrer) VALUES ('$browser','$ip
 // close connection
 $logdb = null;
 
+// fake image
 echo file_get_contents(dirname(__FILE__) . '/images/blank.gif');
 ?>

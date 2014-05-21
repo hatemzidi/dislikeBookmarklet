@@ -18,12 +18,16 @@ just install it, and disapprove that status, image or comment ! ;)
   +  inside any text field (input/textarea)
 
 ► This bookmarklet can be used on
-  +  chrome, firefox
+  +  chrome, firefox, safari
   +  windows, linux and mac os
 
 
 changelog
 ---------
+v 1.4
++ use unicode for the thumb down character
+
+
 v 1.3
 + update backend: hit counter is based on sqlite3 now
 

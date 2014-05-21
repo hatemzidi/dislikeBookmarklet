@@ -146,6 +146,10 @@ span {
 }
 
 /** FOOTER */
+.fb-like {
+	padding-top: 25px
+}
+
 #footer-wrapper {
     overflow: hidden;
     background: #B9B9B9;
@@ -168,7 +172,7 @@ span {
 
 #footer #fbox1 {
     float: left;
-    width: 700px;
+    width: 33%;
 }
 
 #footer p {
@@ -178,8 +182,13 @@ span {
 }
 
 #footer #fbox2 {
-    float: right;
-    width: 300px;
+    float: left;
+    width: 33%;
+}
+
+#footer #fbox3 {
+    float: left;
+    width: 33%;
 }
 
 #footer a {
@@ -271,6 +280,8 @@ p#video-link {
 
 #chrome_store {
 	display : block;
+    font-size: 17px;
+    padding-top: 25px;
 }
 
 .chrome {

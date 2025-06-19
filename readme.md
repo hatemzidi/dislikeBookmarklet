@@ -1,3 +1,6 @@
+THIS PROJECT IS DISCONTINUED NOW - FEEL FREE TO CONTINUE IT.
+-----
+
 iDislikeThis Bookmarklet ![alt text](https://raw.github.com/hatemzidi/dislikeBookmarklet/master/images/logo.png)
 ========================
 
